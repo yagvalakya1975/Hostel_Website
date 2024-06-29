@@ -1,0 +1,346 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahmaputra Hostel | Complain Portal</title>
+
+    <style>
+
+      .main_heading {
+        text-align: center;
+        padding: 1%;
+        height: auto;
+        /* margin: 1%; */
+        margin: 0px;
+        background-color: aliceblue;
+      }
+
+      .main_heading img {
+        width: 250px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      body {
+        margin: 1px;
+      }
+
+      header {
+        margin: 0px;
+      }
+
+
+      /* Styles for navigation bar */
+      nav {
+        background-color: rgb(52, 52, 52); /* Grey background */
+        align-items: center;
+        padding: 2px;
+        display: flex; /* Added flex display for easy alignment */
+        justify-content: space-between; /* Align items in the navigation bar */
+        align-items: center; /* Align items vertically */
+      }
+
+      nav a {
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+        margin: 0 5px; /*Add some spacing between links*/
+        display: inline-block; /* Set to inline-block */
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+      nav a:hover{
+        text-decoration: underline ;
+        color: orangered;
+      }
+
+
+      nav img {
+        width: 150px;
+        height: 70px;
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 55px;
+  margin-top: 5%;
+}
+footer p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #919191;
+}
+footer a {
+  color: #595959;
+  text-decoration: none;
+}
+footer .footer-menu {
+  padding-bottom: 25px;
+}
+footer .footer-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer-menu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+footer .footer-menu ul li a {
+  display: inline-block;
+  color: #494949;
+}
+footer .footer-menu ul li a:hover {
+  color: #000;
+}
+
+
+.social-icons {
+  margin-top: 40px;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons i {
+  color: #2C2C2C;
+  margin-right: 25px;
+  font-size: 25px;
+}
+.social-icons i:hover {
+  color: orangered;
+}
+
+
+      /* complaint buttons */
+      #complain-buttons {
+        background-color:rgb(243, 243, 243);
+      }
+      
+      #complain-buttons h2{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        color: brown;
+        margin-top: 0px;
+        padding-top: 10px;
+        /* border: 3px solid darkolivegreen; */
+      }
+
+
+      .button-container {
+        text-align: center;
+        margin-top: 22px;
+        padding-bottom: 30px;
+      }
+
+      .button-container a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 25px 40px;
+        margin: 20px;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 545;
+        font-family:'Times New Roman', Times, serif;
+        transition: background-color 0.35s ease-in;
+        background-color: rgb(255, 255, 255);
+        border-left: 5px solid red;
+        /* border-style: groove; */
+        box-shadow: 12px 12px 5px 1px teal;
+      }
+
+
+      .button-container a.lan:hover {
+        background-color: blue; /* Darker blue */
+        color: white;
+        font-weight: 600;
+      }
+
+      .button-container a.maintenance:hover {
+        background-color: #1e7e34; /* Darker green */
+        color: white;
+        font-weight: 600;
+      }
+
+      .button-container a.mess:hover {
+        background-color: #e0a800; /* Darker yellow */
+        color: white;
+        font-weight: 600;
+      }
+
+
+      /* complaint-form */
+      .complaint-form {
+        max-width: 600px;
+        margin: 50px auto;
+        margin-top: 0px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+      }
+
+      #form-bg {
+        background-image: url('IITG.jpg');
+        margin-top: 15px;
+        /* margin-bottom: 0px; */
+        padding: 30px;
+        background-size: cover;
+        background-blend-mode:color-burn;
+        background-color:rgba(51, 45, 83, 0.559);
+      }
+
+      .complaint-form h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .complaint-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 540;
+      }
+
+      .complaint-form input[type="text"],
+      .complaint-form input[type="email"],
+      .complaint-form input[type="tel"],
+      .complaint-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #b2b2b2;
+        border-style: groove;
+        border-radius: 5px;
+      }
+
+      .complaint-form textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      .complaint-form button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in;
+      }
+
+      .complaint-form button:hover {
+        background-color: #0056b3;
+      }
+
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    <!-- header start -->
+  <header>
+    <h1 class="main_heading">
+      <img src="Brahmalogo.png" alt="Hostel Logo"> <!-- Add your image here -->
+    </h1>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <img src="BACK tee design copy.jpg" alt="Logo">
+    <div>
+      <a href="/index">Home</a>
+      <a href="/council">Council</a>
+      <a href="/events">Events</a>
+      <a href="/ComplainPortal">Complain Portal</a>
+    </div>
+  </nav>
+
+  <section id="complain-buttons">
+    <h2>Complaints</h2>
+    <div class="button-container">
+      <a href="https://www.iitg.ac.in/ipm/complaint/" class="lan">LAN Complaints</a>
+      <a href="https://www.iitg.ac.in/cb/" class="maintenance">Maintenance Complaints</a>
+      <a href="mailto:ss.brahmaputra@iitg.ac.in" class="mess">Mess Complaints</a>
+    </div>
+  </section>
+
+
+
+    <!-- Complaint Form -->
+<div id="form-bg">   
+    <div class="complaint-form">
+      <h2>Submit Your Complaint</h2>
+      <form action="/comp" method="post">
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">IITG Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Phone No. <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <label for="room">Room No. <span class="required">*</span></label>
+        <input type="text" id="room" name="room" required>
+  
+        <label for="subject">Subject of Complaint <span class="required">*</span></label>
+        <input type="text" id="subject" name="subject" required>
+  
+        <label for="body">Body <span class="required">*</span></label>
+        <textarea id="body" name="body" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</div> 
+
+
+  <!-- footer Start -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/council">Council</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/ComplainPortal">Complain Portal</a></li>
+            </ul>
+          </div>
+          <p><strong>Copyright &copy; Brahmaputra IITG All rights reserved.</strong></p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com/brahmaputra_hostel_iitg/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jaibrahmaputra/">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:brahmaputra_off@iitg.ac.in" target="_blank" title="Email">
+              <i class="fas fa-envelope"></i>
+              </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

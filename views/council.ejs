@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahmaputra Hostel | Council</title>
+
+    <style>
+
+    .main_heading {
+        text-align: center;
+        padding: 1%;
+        height: auto;
+        /* margin: 1%; */
+        margin: 0px;
+        background-color: aliceblue;
+    }
+
+    .main_heading img {
+        width: 250px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+
+    body {
+        margin: 1px;
+    }
+
+    header {
+        margin: 0px;
+    }
+
+
+      /* Styles for navigation bar */
+      nav {
+        background-color: rgb(52, 52, 52); /* Grey background */
+        align-items: center;
+        padding: 2px;
+        display: flex; /* Added flex display for easy alignment */
+        justify-content: space-between; /* Align items in the navigation bar */
+        align-items: center; /* Align items vertically */
+      }
+
+      nav a {
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+        margin: 0 5px; /*Add some spacing between links*/
+        display: inline-block; /* Set to inline-block */
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+      nav a:hover{
+        text-decoration: underline ;
+        color: orangered;
+      }
+
+
+      nav img {
+        width: 150px;
+        height: 70px;
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 55px;
+  margin-top: 5%;
+}
+footer p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #919191;
+}
+footer a {
+  color: #595959;
+  text-decoration: none;
+}
+footer .footer-menu {
+  padding-bottom: 25px;
+}
+footer .footer-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer-menu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+footer .footer-menu ul li a {
+  display: inline-block;
+  color: #494949;
+}
+footer .footer-menu ul li a:hover {
+  color: #000;
+}
+
+
+.social-icons {
+  margin-top: 40px;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons i:hover {
+  color: orangered;
+}
+.social-icons i {
+  color: #2C2C2C;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+
+.hmc{
+    background-color: rgb(231, 231, 225);
+}
+
+.staff-section, .council-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 2px 0;
+    }
+
+.staff-section div, .council-section div {
+    margin: 25px;
+    text-align: center;
+    }
+
+.staff-section img, .council-section img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    }
+
+
+.staff-section {
+    background-color: rgb(216, 216, 210);
+    padding: 20px;
+    display: flex;
+    align-content: center;
+}
+
+
+    .category-container {
+                padding-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+    
+            .profile-card {
+                position: relative;
+                width: 220px;
+                height: 320px; /* Adjusted height for each profile card */
+                background-color: #fff;
+                padding: 20px; /* Adjusted padding for content */
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: all .4s;
+                margin: 0 20px 20px 0;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+    
+            .profile-card .img {
+                width: 100%;
+                height: 150px; /* Adjusted height for the image */
+                overflow: hidden;
+            }
+    
+            .img img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px; /* Adjusted border radius */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: all .4s;
+                z-index: 99;
+            }
+    
+            .caption {
+                margin-top: 15px; /* Adjusted margin for the caption */
+            }
+    
+            .caption h3 {
+                font-size: 18px; /* Adjusted font size */
+                color: #0c52a1;
+                font-weight: 600;
+            }
+    
+            .caption p {
+                font-size: 17px; /* Adjusted font size */
+                font-weight: 500;
+                font-weight: bold;
+                margin: 2px 0 10px 0;
+            }
+    
+            .social-links i {
+                font-size: 20px; /* Adjusted font size */
+                margin: 0 3px;
+                cursor: pointer;
+                color: #333;
+                transition: all .4s;
+            }
+    
+            .social-links i:hover {
+                color: #0c52a1;
+            }
+
+        .profile-card .img img {
+            width: 100%;
+            height: 140%;
+            object-fit: cover; /* Adjust this property as needed */
+            object-position: center; /* Adjust this property as needed */
+        }
+
+
+
+    </style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+
+
+
+<body>
+    <!-- header start -->
+  <header>
+    <h1 class="main_heading">
+      <img src="Brahmalogo.png" alt="Hostel Logo"> <!-- Add your image here -->
+    </h1>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <img src="BACK tee design copy.jpg" alt="Logo">
+    <div>
+      <a href="/index">Home</a>
+      <a href="/council">Council</a>
+      <a href="/events">Events</a>
+      <a href="/ComplainPortal">Complain Portal</a>
+    </div>
+  </nav>
+
+  
+<section class="hmc">
+      <!-- Warden and Associate Warden Section -->
+      <!-- <section class="staff-section">
+        <div>
+            <img src="HMC_imgs/Yasharth_HMC.JPG" alt="Warden">
+            <h3>ABC</h3>
+            <p>Warden</p>
+            <p>Email: warden@iitg.ac.in</p>
+            <p>Phone: +91-1234567890</p>
+        </div>
+        <div>
+            <img src="HMC_imgs/Yasharth_HMC.JPG" alt="Associate Warden">
+            <h3>DEF</h3>
+            <p>Associate Warden</p>
+            <p>Email: associate.warden@iitg.ac.in</p>
+            <p>Phone: +91-0987654321</p>
+        </div>
+    </section> -->
+
+
+    <div class="category-container">
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/Yasharth_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>General Secretary</p>
+                <h3>Yasharth Singh</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/Anany_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Associate General Secretary</p>
+                <h3>Anany Sihare</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+    
+    <div class="category-container">
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/AryanRaj_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Sports Secretary</p>
+                <h3>Aryan Raj</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/Adi_HMC.jpg">
+            </div>
+            <div class="caption">
+                <p>Technical Secretary</p>
+                <h3>Adi Jain</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/AyushSahu_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Cultural Secretary</p>
+                <h3>Ayush Sahu</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+       
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/Anupam_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Anupam Ajey Pratap Singh</p>
+                <h3>Services Secretary</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-container">
+
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/AbhinavG_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Welfare Secretary</p>
+                <h3>Abhinav Gundumalla</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/AbhishekSharma_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Maintenance Secretary</p>
+                <h3>Abhishek Sharma</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/Ashutosh_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Literary Secretary</p>
+                <h3>Ashutosh Singh</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="img">
+                <img src="HMC_imgs/HarshShukla_HMC.JPG">
+            </div>
+            <div class="caption">
+                <p>Media Head</p>
+                <h3>Harsh Shukla</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    
+        
+    </div>
+
+
+  <!-- footer Start -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/council">Council</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/ComplainPortal">Complain Portal</a></li>
+            </ul>
+          </div>
+          <p><strong>Copyright &copy; Brahmaputra IITG All rights reserved.</strong></p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com/brahmaputra_hostel_iitg/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jaibrahmaputra/">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+                <a href="mailto:brahmaputra_off@iitg.ac.in" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

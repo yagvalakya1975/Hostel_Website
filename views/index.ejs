@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brahmaputra Hostel | Home</title>
+  
+    <style>
+      
+      .main_heading {
+        text-align: center;
+        padding: 1%;
+        height: auto;
+        /* margin: 1%; */
+        margin: 0px;
+        background-color: aliceblue;
+      }
+
+      .main_heading img {
+        width: 250px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      body {
+        margin: 1px;
+      }
+
+      header {
+        margin: 0px;
+      }
+
+      /* Styles for navigation bar */
+      nav {
+        background-color: rgb(52, 52, 52); /* Grey background */
+        align-items: center;
+        padding: 2px;
+        display: flex; /* Added flex display for easy alignment */
+        justify-content: space-between; /* Align items in the navigation bar */
+        align-items: center; /* Align items vertically */
+      }
+
+      nav a {
+        /* padding: 5px; */
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+        margin: 0 5px; /*Add some spacing between links*/
+        display: inline-block; /* Set to inline-block */
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+      nav a:hover{
+        text-decoration: underline ;
+        color: orangered;
+      }
+
+
+      nav img {
+        width: 150px;
+        height: 75px;
+        vertical-align: middle; /* Align vertically to the middle */
+      }
+
+
+      .hostel-info {
+      background-image: url("IITG2.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      color:rgb(255, 255, 255); 
+      padding-top: 30px;
+      padding-left: 60px;
+      padding-bottom: 60px;
+      padding-right: 60px;
+      text-align: center;
+      height: 550px;
+      background-clip: border-box;
+      border-radius: 0.5%;
+      background-color: rgb(255, 255, 255);
+      /* background-color: #1a1629;
+      opacity: 0.9; */
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      position: relative; /* Position relative for absolute positioning of h2 */
+      /* opacity: 90%; */
+    }
+
+
+    .hostel-info h2 {
+      /* position: absolute;  */
+      position:absolute; 
+      margin-top: 35px;
+      /* left: 35%; Align at the horizontal center */
+      /* transform: translateX(-50%); Center alignment */
+      font-size: 60px; /* Font size */
+      font-weight: bolder; /* Bold font weight */
+      padding-left: 11%;
+      /* margin-top: 5px; */
+      font-family: 'Times New Roman', Times, serif;
+      color: brown;
+    }
+
+    .hostel-info p {
+      margin-top: 95px; /* Adjust margin as needed */
+      font-weight: bold;
+      text-align: justify;
+      padding-left: 20%;
+      padding-right: 20%;
+      font-family: cursive;
+    }
+
+
+    /* .aboutus h3{
+      border-radius: 5px;
+      padding: 10px;
+      width: 90px;
+      background-color: aliceblue;
+      font-family:'Times New Roman', Times, serif;
+      border-style:ridge;
+    } */
+
+    .hostel-images {
+      margin-top: 50px; /* Adjust margin as needed */
+      background-color: rgb(235, 240, 240);
+      border-radius: 0.5%;
+    }
+
+    .hostel-images h3{
+      text-align: center;
+      padding: 10px;
+      /* width: 250px; */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size:x-large;
+      font-weight: 550;
+      background-color: rgb(197, 212, 212);
+      border-radius: 10px;
+      border-style: groove;
+      color: brown;
+    }
+
+    .hostel-images img {
+      display: block; /* Make images block-level */
+      margin: 0 auto; /* Center images horizontally */
+      width: 500px; /* Adjust image width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add space between images */
+      border-radius: 1%;
+    }
+
+
+    .image-description {
+      text-align: center; /* Center-align text */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
+      color: brown;
+      font-weight: bold;
+    }
+
+
+
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 55px;
+  margin-top: 5%;
+}
+footer p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #919191;
+}
+footer a {
+  color: #595959;
+  text-decoration: none;
+}
+footer .footer-menu {
+  padding-bottom: 25px;
+}
+footer .footer-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer-menu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+footer .footer-menu ul li a {
+  display: inline-block;
+  color: #494949;
+}
+footer .footer-menu ul li a:hover {
+  color: #000;
+}
+
+
+.social-icons {
+  margin-top: 40px;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons i {
+  color: #2C2C2C;
+  margin-right: 25px;
+  font-size: 25px;
+}
+.social-icons i:hover {
+  color: orangered;
+}
+
+/* Adjustments for screens 900px and wider */
+@media (min-width: 900px) {
+  .hostel-info h2 {
+      position: absolute; /* Position absolute to overlay on background */
+      top: 0.1px; 
+      /* left: 35%; Align at the horizontal center */
+      /* transform: translateX(-50%); Center alignment */
+      font-size: 60px; /* Font size */
+      font-weight: bolder; /* Bold font weight */
+      padding-left: 11%;
+      /* margin-top: 5px; */
+      font-family: 'Times New Roman', Times, serif;
+      color: brown;
+    }
+
+    .hostel-info p {
+      margin-top: 110px; /* Adjust margin as needed */
+      font-weight: bold;
+      text-align: justify;
+      padding-left: 20%;
+      padding-right: 20%;
+      font-family: cursive;
+    }
+}
+
+/* Adjustments for screens between 600px and 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .hostel-info h2 {
+        font-size: 45px; /* Slightly larger font size for medium screens */
+        text-align: center;
+    }
+
+    .hostel-info p {
+        font-size: 15px; /* Slightly larger font size for medium screens */
+        padding: 0 10%; /* Adjust padding for medium screens */
+    }
+}
+
+/* Adjustments for screens smaller than 600px */
+@media (max-width: 599px) {
+
+    .hostel-info {
+      height: 240px;
+      width: auto;
+      padding-top: 3px;
+      /* background-size: cover;
+      background-repeat: no-repeat; */
+    }
+
+    .hostel-info h2 {
+        font-size: 25px; /* Smaller font size for small screens */
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+
+    .hostel-info p {
+        margin-top: 35px;
+        font-size: 10px; /* Smaller font size for small screens */
+        padding: 0 3%; /* Reduce padding for small screens */
+    }
+
+    .hostel-images img {
+      display: block; /* Make images block-level */
+      margin: 0 auto; /* Center images horizontally */
+      width: 400px; /* Adjust image width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add space between images */
+      border-radius: 1%;
+    }
+
+}
+
+/* Adjustments for screens smaller than 450px */
+@media (max-width: 450px) {
+
+    .hostel-info h2 {
+        font-size: 15px; /* Smaller font size for very small screens */
+        text-align: center;
+    }
+
+    .hostel-info p {
+        font-size: 5px; /* Smaller font size for very small screens */
+        padding: 0 2%; /* Reduce padding for very small screens */
+    }
+
+    .hostel-images img {
+      display: block; /* Make images block-level */
+      margin: 0 auto; /* Center images horizontally */
+      width: 300px; /* Adjust image width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add space between images */
+      border-radius: 1%;
+    }
+}
+
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.945); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in, visibility 1s ease-out; /* Smooth transition */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup-content {
+  background: transparent; /* Make it transparent to show the background color */
+  padding: 20px;
+  text-align: center;
+  font-size: 70px;
+  color: rgba(165, 42, 42, 0.815);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.popup.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<script>
+  window.onload = function() {
+    var popup = document.getElementById('popup');
+    
+    setTimeout(function() {
+      popup.classList.add('hide');
+    }, 800); // Hide after 0.8 seconds
+  };
+</script>
+
+
+
+
+  </head>
+
+
+
+  <body>
+<!-- header start -->
+  <header>
+    <h1 class="main_heading">
+      <img src="Brahmalogo.png" alt="Hostel Logo"> <!-- Add your image here -->
+    </h1>
+  </header>
+
+
+  <!-- popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>JAI BRAHMA</h2>
+    </div>
+  </div>
+  
+
+  <!-- Navigation bar -->
+  <nav>
+    <img src="BACK tee design copy.jpg" alt="Logo">
+    <div>
+      <a href="/index">Home</a>
+      <a href="/council">Council</a>
+      <a href="/events">Events</a>
+      <a href="/ComplainPortal">Complain Portal</a>
+    </div>
+  </nav>
+
+  <!-- Hostel Description -->
+  <div class="hostel-info">
+    <h2>Welcome to Brahmaputra Hostel</h2>
+    <p>Housing nearly thousand students, the hostel to its might is named aptly as Brahmaputra. The hostel began to function from academic year 2011-2012. It is boys hostel and boarders in the hostel are from various streams mainly pursuing their Ph.D, M.Tech, M.Sc, B.Tech.It is a three floored building with spacious rooms and all other facilities incorporated. The hostel is a centre for various activities. Hostel Brahmaputra is the highest accommodating hostel in the history of IIT Guwahati. Constructed in peaceful and playful environment, it imparts enthusiasm and endeavour in the students. The hostel is always filled with enormously talented students who are always eager for innovation.The boarders in the hostel cultivate the feeling of oneness standing unite and as fierce as The Brahmaputra River.</p>
+  </div>
+
+
+
+  <!-- About Hostel -->
+  <!-- <div class="aboutus">
+    <h3>About Us</h3>
+    <p>
+      Housing nearly thousand students, the hostel to its might is named aptly as Brahmaputra. The hostel began to function from academic year 2011-2012. It is boys hostel and boarders in the hostel are from various streams mainly pursuing their Ph.D, M.Tech, M.Sc, B.Tech.It is a three floored building with spacious rooms and all other facilities incorporated. The hostel is a centre for various activities. Hostel Brahmaputra is the highest accommodating hostel in the history of IIT Guwahati. Constructed in peaceful and playful environment, it imparts enthusiasm and endeavour in the students. The hostel is always filled with enormously talented students who are always eager for innovation.The boarders in the hostel cultivate the feeling of oneness standing unite and as fierce as The Brahmaputra River.
+    </p>
+  </div> -->
+
+
+  <!-- Hostel images -->
+  <div class="hostel-images">
+    <h3>Hostel Amenities</h3>
+    <div class="image-description">
+      <img src="Brahma_hostel_pic.jpg" alt="Hostel Mess">
+      <p>Hostel Mess</p>
+      <hr>
+    </div>
+    <div class="image-description">
+      <img src="Brahma_hostel_pic.jpg" alt="Gym Room">
+      <p>Gym Room</p>
+      <hr>
+    </div>
+    <div class="image-description">
+      <img src="Brahma_hostel_pic.jpg" alt="Music Room">
+      <p>Music Room</p>
+      <hr>
+    </div>
+    <div class="image-description">
+      <img src="Brahma_hostel_pic.jpg" alt="Sports Room">
+      <p>Sports Room</p>
+      <hr>
+    </div>
+  </div>
+  </div>
+
+
+<!-- footer Start -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/council">Council</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/ComplainPortal">Complain Portal</a></li>
+          </ul>
+        </div>
+        <p><strong>Copyright &copy; Brahmaputra IITG All rights reserved.</strong></p>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.instagram.com/brahmaputra_hostel_iitg/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/jaibrahmaputra/">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:brahmaputra_off@iitg.ac.in" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahmaputra Hostel | Events</title>
+
+
+    <style>
+
+      .main_heading {
+        text-align: center;
+        padding: 1%;
+        height: auto;
+        /* margin: 1%; */
+        margin: 0px;
+        background-color: aliceblue;
+      }
+
+      .main_heading img {
+        width: 250px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      body {
+        margin: 1px;
+      }
+
+      header {
+        margin: 0px;
+      }
+    
+    
+          /* Styles for navigation bar */
+          nav {
+            background-color: rgb(52, 52, 52); /* Grey background */
+            align-items: center;
+            padding: 2px;
+            display: flex; /* Added flex display for easy alignment */
+            justify-content: space-between; /* Align items in the navigation bar */
+            align-items: center; /* Align items vertically */
+          }
+    
+          nav a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            margin: 0 5px; /*Add some spacing between links*/
+            display: inline-block; /* Set to inline-block */
+            vertical-align: middle; /* Align vertically to the middle */
+          }
+    
+          nav a:hover{
+            text-decoration: underline ;
+            color: orangered;
+          }
+    
+    
+          nav img {
+            width: 150px;
+            height: 70px;
+            vertical-align: middle; /* Align vertically to the middle */
+          }
+    
+    
+    footer {
+      background: #F5F5F5;
+      text-align: center;
+      padding-top: 48px;
+      padding-bottom: 55px;
+      margin-top: 5%;
+    }
+    footer p {
+      font-size: 13px;
+      line-height: 25px;
+      color: #919191;
+    }
+    footer a {
+      color: #595959;
+      text-decoration: none;
+    }
+    footer .footer-menu {
+      padding-bottom: 25px;
+    }
+    footer .footer-menu ul {
+      margin: 0px;
+      padding: 0px;
+    }
+    footer .footer-menu ul li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+    footer .footer-menu ul li a {
+      display: inline-block;
+      color: #494949;
+    }
+    footer .footer-menu ul li a:hover {
+      color: #000;
+    }
+    
+    
+    .social-icons {
+      margin-top: 40px;
+    }
+    .social-icons li {
+      display: inline-block;
+      margin: 0 6px;
+    }
+    .social-icons a {
+      display: inline-block;
+    }
+    .social-icons i {
+      color: #2C2C2C;
+      margin-right: 25px;
+      font-size: 25px;
+    }
+    .social-icons i:hover {
+    color: orangered;
+    }
+
+
+/* Styles for the photo gallery with sliding effect */
+        #photo-gallery {
+            text-align: center;
+            /* margin: 20px; */
+            background-color: rgb(255, 229, 229);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .event {
+            margin: 5px auto;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: orangered;
+        }
+
+        .event h3 {
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        .photo-slider {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            /* width: 75%;
+            height: 337.5px; */
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .photo-slider img {
+            width: 100%;
+            /* height: 450px;  */
+            object-fit: cover;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+@media (min-width : 900px){
+  .photo-slider{
+    height: 500px;
+  }
+  .photo-slider img {
+    height: 500px;
+  }
+}
+
+@media (max-width : 600px){
+  .photo-slider{
+    width: 100%;
+    height: 300px;
+  }
+  /* .photo-slider img {
+    height: 500px;
+  } */
+}
+
+
+  </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function createSlider(sliderId) {
+            const slider = document.getElementById(sliderId);
+            const images = slider.getElementsByTagName('img');
+            let currentIndex = 0;
+
+            function showImage(index) {
+                for (let i = 0; i < images.length; i++) {
+                    images[i].style.opacity = '0';
+                }
+                images[index].style.opacity = '1';
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            }
+
+            showImage(currentIndex);
+            setInterval(nextImage, 3500); // Change image every 3.5 seconds
+        }
+
+        createSlider('slider-event1');
+        createSlider('slider-event2');
+        createSlider('slider-event3');
+        // Add more sliders as needed
+    });
+
+</script>
+   
+
+
+</head>
+
+
+<body>
+    <!-- header start -->
+  <header>
+    <h1 class="main_heading">
+      <img src="Brahmalogo.png" alt="Hostel Logo" > <!-- Add your image here -->
+    </h1>
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <img src="BACK tee design copy.jpg" alt="Logo">
+    <div>
+      <a href="/index">Home</a>
+      <a href="/council">Council</a>
+      <a href="/events">Events</a>
+      <a href="/ComplainPortal">Complain Portal</a>
+    </div>
+  </nav>
+
+
+
+ <!-- Photo Gallery Section -->
+ <section id="photo-gallery">
+    <!-- <h2>Event Photo Gallery</h2> -->
+    
+
+    <div class="event">
+      <h3>RamLeela</h3>
+
+      <div class="photo-slider" id="slider-event1">
+          <img src="Raamleela\DSC_0059.jpg" alt="Event 2 Photo 1">
+          <img src="Raamleela\DSC_0170.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_0177.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2195 2.jpeg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2265.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2338.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2377.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2388.jpg" alt="Event 2 Photo 2">
+          <img src="Raamleela\DSC_2405.jpg" alt="Event 2 Photo 2">
+          
+      </div>
+  </div>
+
+
+    <div class="event">
+        <h3>Hostel Day</h3>
+        <div class="photo-slider" id="slider-event2">
+            <img src="Hostel Day imgs/DSC_3070.JPG" alt="Event 1 Photo 1">
+            <img src="Hostel Day imgs\DSC_3112.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3140.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3141.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3159.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3161.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3220.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3003.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3203.JPG" alt="Event 1 Photo 2">
+            <img src="Hostel Day imgs/DSC_3302.JPG" alt="Event 1 Photo 2">
+            <!-- Add more photos as needed -->
+        </div>
+    </div>
+    
+
+
+    <div class="event">
+      <h3>Janmashtami</h3>
+      <div class="photo-slider" id="slider-event3">
+          <img src="janmashtami/81C8343A-C751-4659-BF83-AC2B1BD797EF_1_105_c.jpeg" alt="Event 2 Photo 1">
+          <img src="janmashtami/20230907_160315462_iOS.jpg" alt="Event 2 Photo 2">
+          <img src="janmashtami/20230907_165900504_iOS.jpg" alt="Event 2 Photo 2">
+          <img src="janmashtami/C360E29A-2474-4E06-BF2B-400E041A24EF_1_105_c.jpeg" alt="Event 2 Photo 2">
+          <img src="janmashtami/E4A36352-828E-42D4-875C-41F24A1CB0BC_1_105_c.jpeg" alt="Event 2 Photo 2">
+          <!-- Add more photos as needed -->
+      </div>
+  </div>
+
+
+  <!-- <div class="event">
+    <h3>Event 2</h3>
+    <div class="photo-slider" id="slider-event2">
+        <img src="path_to_your_image/event2_photo1.jpg" alt="Event 2 Photo 1">
+        <img src="path_to_your_image/event2_photo2.jpg" alt="Event 2 Photo 2">
+        
+    </div>
+</div> -->
+
+
+<!-- <div class="event">
+  <h3>Event 2</h3>
+  <div class="photo-slider" id="slider-event2">
+      <img src="path_to_your_image/event2_photo1.jpg" alt="Event 2 Photo 1">
+      <img src="path_to_your_image/event2_photo2.jpg" alt="Event 2 Photo 2">
+      
+  </div>
+</div> -->
+
+    
+    <!-- Add more events as needed -->
+</section>
+  
+
+  
+
+<!-- footer Start -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/council">Council</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/ComplainPortal">Complain Portal</a></li>
+            </ul>
+          </div>
+          <p><strong>Copyright &copy; Brahmaputra IITG All rights reserved.</strong></p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com/brahmaputra_hostel_iitg/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jaibrahmaputra/">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:brahmaputra_off@iitg.ac.in" target="_blank" title="Email">
+              <i class="fas fa-envelope"></i>
+              </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
