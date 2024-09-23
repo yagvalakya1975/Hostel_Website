@@ -1,0 +1,15 @@
+.navbar-outer-wrapper{
+    /* padding: 32px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-inner-wrapper li{
+    padding: 0px 70px;
+    width: max-content;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar-inner-wrapper img{
+    width: 230px;
+}

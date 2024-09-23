@@ -1,0 +1,85 @@
+.heading-wrapper{
+    margin: 135px 0px 65px 0px;
+}
+.main-heading{
+    font-size: 9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6D3D21;
+    font-weight: bold;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+.sub-heading-wrapper{
+    display: flex;
+    font-size: 2rem;
+    padding: 10px;
+    justify-content: space-between;
+}
+.info-wrapper{
+    width: 55%;
+    font-size: 1.2rem;
+}
+.main-img-wrapper{
+    margin: 76px 0px;
+    display: flex;
+    justify-content: center;
+}
+.main-img-wrapper img{
+    width: 100%;
+}
+
+
+
+
+.facilties-heading{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6D3D21;
+    font-weight: 600;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+.facilities-slide-wrapper {
+    height: calc(100vw * 4);
+    position: relative;
+}
+.facilities-inner-wrapper{
+    position: sticky;
+    top: 0px;
+}
+.facilities-serial{
+    font-size: 12rem;
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+}
+.serial-box{
+    margin-left: 5vw;
+}
+.facilities-slide{
+    display: flex;
+    /* overflow-x: hidden; */
+    margin: 20px 0px 40px 0px;
+    padding-left: 20px;
+}
+.facility-box{
+    display: flex;
+    width: 100vw;
+}
+.facility-img img{
+    width: 33vw;
+}
+.facility-img{
+    padding: 0px 1vw;
+    width: 35vw;
+}
+.facility-name{
+    font-size: 4rem;
+    color: #6D3D21;
+    width: 25vw;
+    display: flex;
+}
+.facility-info{
+    width: 35vw;
+    margin-right: 20px;
+}
