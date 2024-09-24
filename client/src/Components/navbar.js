@@ -1,7 +1,9 @@
 import logo from '../Assets/logo.png'
 import '../Styles/navbar.css'
+import {useNavigate} from 'react-router-dom'
 
 const Navbar = ()=>{
+    const navigate = useNavigate()
     return(
         <div className="navbar-outer-wrapper">
             <div className="navbar-inner-wrapper">
@@ -9,9 +11,9 @@ const Navbar = ()=>{
             </div>
             <div className="navbar-inner-wrapper">
                 <ul style={{color:'#1F1F1F',listStyle:'none',display:'flex'}}>
-                    <li>Home</li>
+                    <li onClick={()=>{navigate('/',{replace:true})}}>Home</li>
                     <li>Council</li>
-                    <li>Events</li>
+                    <li onClick={()=>{navigate('/events' , {replace:true})}}>Events</li>
                     <li>Complaint Portal</li>
                 </ul>
             </div>

@@ -1,0 +1,42 @@
+.event-header{
+    display: flex;
+    justify-content: space-between;
+}
+.event-name{
+    font-size: 2.5rem;
+    color: #6D3D21;
+    font-weight: bold;
+}
+.event-info{
+    width: 40vw;
+    font-size: 1rem;
+    text-align: right;
+}
+.event-wrapper{
+    margin: 0px 0px 10vh 0px;
+}
+.event-img img{
+    width: 45vw;
+}
+.event-img{
+    padding: 0px 20px;
+    /* width: calc(45vw + 40px); */
+}
+.event-slider{
+    display: flex;
+    margin-left: 25vw;
+    width: max-content;
+    transition: 0.5s;
+}
+.event-btn-wrapper img{
+    width: 2.4vw;
+}
+.event-btn-wrapper {
+    justify-content: right;
+    display: flex;
+    margin: 20px 0px;
+}
+.event-slider-outer{
+    width: 100vw;
+    /* overflow-x: hidden; */
+}
