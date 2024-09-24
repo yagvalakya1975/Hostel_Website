@@ -28,17 +28,17 @@ const Events = ()=>{
     const data = [
         {
             name:'RAMLEELA',
-            info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+            info:"Our hostel's Ramleela event, performed by freshers is a vibrant andengaging celebration,bringing the epic tale of Lord Rama to life throughdramatic performances,traditional music, dance,and lively storytelling. ",
             img:[R1 , R2 , R3, R4, R5, R6, R7, R8]
         },
         {
             name:'HOSTEL DAY',
-            info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+            info:"On April every year, Brahmaputra celebrates its hostel day. A day wherewe celebrate our Grandeur, our victories and the spirit of our hostel unity. Bejeweled and bedecked as a newly wed bride, the hostel lights up with multicoloured lighting and beautiful décor.On this day, we bid farewell to ourseniors, stalwart people who guide usthroughout our year. To top it all off,we have a special dinner",
             img:[H1 , H2 , H3 , H4 , H5 , H6 , H7, H8, H9 , H10]
         },
         {
             name:'JANMASHTAMI',
-            info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+            info:"Our hostel's Janmashtami event is a lively andjoyous celebration,featuring Aarti, and the exciting Dahi Handi(matka) breaking ceremony, offering aunique cultural experience.",
             img:[J1 , J2, J3 , J4 , J5]
         }
     ]
