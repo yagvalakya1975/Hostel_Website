@@ -9,7 +9,7 @@ const Navbar = ()=>{
             <div className="navbar-inner-wrapper">
                 <img src={logo} alt=""/>
             </div>
-            <div className="navbar-inner-wrapper">
+            <div className="navbar-inner-wrapper" style={{display:'none'}}>
                 <ul style={{color:'#1F1F1F',listStyle:'none',display:'flex'}}>
                     <li onClick={()=>{navigate('/',{replace:true})}}>Home</li>
                     <li>Council</li>

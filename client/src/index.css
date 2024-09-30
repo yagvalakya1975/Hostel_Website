@@ -9,6 +9,11 @@ body {
   padding: 32px
   ;
 }
+@media screen and (max-width:750px) {
+    body{
+      padding: 32px 17px;
+    }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

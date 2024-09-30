@@ -1,5 +1,5 @@
 .heading-wrapper{
-    margin: 135px 0px 65px 0px;
+    margin: 9vw 0px 4vw 0px;
 }
 .main-heading{
     font-size: 9rem;
@@ -82,4 +82,69 @@
 .facility-info{
     width: 35vw;
     margin-right: 20px;
+}
+@media screen and (max-width:1220px) {
+    .main-heading{
+        font-size: 12vw;
+    }
+    .facilities-serial{
+        font-size: 15vw;
+    }
+    .sub-heading-wrapper{
+        font-size: 3vw;
+        padding: 5px 0px;
+    }
+    .info-wrapper{
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+    }
+}
+@media screen and  (max-width:1100px) {
+    .facilties-heading{
+        font-size: 5.5vw;
+    }
+}
+@media screen and (max-width:900px) {
+    .facility-name{
+        font-size: 5vw;
+        /* width: 25vw; */
+    } 
+    .facility-img img{
+        width:90vw
+    }
+    .facility-img{
+        width: 100vw;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width:800px) {
+    .facility-box{
+        flex-direction: column;
+    }
+    .facility-name{
+        width: 90vw;
+    }
+    .facility-info{
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .main-heading{
+        font-size: 11.5vw;
+    }
+    .sub-heading-wrapper{
+        font-size: 4vw;
+    }
+    .sub-heading-wrapper div{
+        width: 45%;
+    }
+    .info-wrapper{
+        font-size: 2.4vw;
+    }
+    .main-img-wrapper{
+        margin: 15px 0px;
+    }
 }

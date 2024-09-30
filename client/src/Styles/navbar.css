@@ -11,5 +11,10 @@
     cursor: pointer;
 }
 .navbar-inner-wrapper img{
-    width: 230px;
+    width: 16vw;
+}
+@media screen and (max-width:750px) {
+    .navbar-inner-wrapper img{
+        width: 32vw;
+    }
 }
