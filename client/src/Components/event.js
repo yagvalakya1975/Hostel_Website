@@ -8,7 +8,8 @@ const Event = ({event})=>{
     const [width , setWidth]=useState(45)
 
     useEffect(()=>{
-        //handle the change of the width
+        if(window.innerWidth<=1000) setWidth(92)
+        else setWidth(45)
     },[])
 
     const handleClick = (sign)=>{
@@ -30,13 +31,14 @@ const Event = ({event})=>{
                 <div className='event-info'>{event.info}</div>
             </div>
 
-            <div className='event-btn-wrapper'>
+           { window.innerWidth>1000 && <div className='event-btn-wrapper'>
                 <div style={{marginRight:'15px'}} onClick={()=>{handleClick(-1)}}><img src={left} alt=''/></div>
                 <div style={{marginLeft:'15px'}} onClick={()=>{handleClick(1)}}><img src={right} alt=''/></div>
-            </div>
+            </div>}
 
             <div className = 'event-slider-outer'>
-                <div className= 'event-slider' style={{transform:`translateX(-${current*width}vw)`}}>
+                <div className= 'event-slider' 
+                style={{transform:`translateX(-${current*width + current*1600/window.innerWidth}vw)`}}>
                     {
                         (event.img).map((img , index)=>{
                             return(
@@ -48,6 +50,11 @@ const Event = ({event})=>{
                     }
                 </div>
             </div>
+
+            { window.innerWidth<=1000 && <div className='event-btn-wrapper'>
+                <div style={{marginRight:'6px'}} onClick={()=>{handleClick(-1)}}><img src={left} alt=''/></div>
+                <div style={{marginLeft:'6px'}} onClick={()=>{handleClick(1)}}><img src={right} alt=''/></div>
+            </div>}
         </div>
     )
 }

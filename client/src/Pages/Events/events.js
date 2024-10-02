@@ -23,29 +23,42 @@ import J2 from './assets/J2.jpg'
 import J3 from './assets/J3.jpg'
 import J4 from './assets/J4.jpeg'
 import J5 from './assets/J5.jpeg'
+import I1 from './assets/I1.jpg'
+import I2 from './assets/I2.jpg'
+import I3 from './assets/I3.jpg'
+import I4 from './assets/I4.jpg'
+import I5 from './assets/I5.jpg'
+import I6 from './assets/I6.jpg'
+import I7 from './assets/I7.jpg'
 
 const Events = ()=>{
     const data = [
         {
             name:'RAMLEELA',
-            info:"Our hostel's Ramleela event, performed by freshers is a vibrant andengaging celebration,bringing the epic tale of Lord Rama to life throughdramatic performances,traditional music, dance,and lively storytelling. ",
+            info:"Our hostel's Ramleela event, performed by freshers is a vibrant and engaging celebration,bringing the epic tale of Lord Rama to life through dramatic performances, traditional music, dance,and lively storytelling. ",
             img:[R1 , R2 , R3, R4, R5, R6, R7, R8]
         },
         {
             name:'HOSTEL DAY',
-            info:"On April every year, Brahmaputra celebrates its hostel day. A day wherewe celebrate our Grandeur, our victories and the spirit of our hostel unity. Bejeweled and bedecked as a newly wed bride, the hostel lights up with multicoloured lighting and beautiful décor.On this day, we bid farewell to ourseniors, stalwart people who guide usthroughout our year. To top it all off,we have a special dinner",
-            img:[H1 , H2 , H3 , H4 , H5 , H6 , H7, H8, H9 , H10]
+            info:"On April every year, Brahmaputra celebrates its hostel day. A day wherewe celebrate our Grandeur, our victories and the spirit of our hostel unity. Bejeweled and bedecked as a newly wed bride, the hostel lights up with multicoloured lighting and beautiful décor.On this day, we bid farewell to ourseniors, stalwart people who guide usthroughout our year. To finish it all off,we have a special dinner",
+            img:[H1 , H2 , H3 , H4 , H5 , H6 , H8, H9 , H10]
+        },
+        {
+            name:'INDEPENDENCE DAY',
+            info:"On August 15th every year, we celebrate Independence Day with a flag hoisting ceremony, followed by a spirited parade led by sophomores. We also participate in the inter-hostel parade competition with great enthusiasm and team spirit.",
+            img:[I4,I1 , I2, I5, I6 , I7]
         },
         {
             name:'JANMASHTAMI',
-            info:"Our hostel's Janmashtami event is a lively andjoyous celebration,featuring Aarti, and the exciting Dahi Handi(matka) breaking ceremony, offering aunique cultural experience.",
+            info:"Our hostel's Janmashtami event is a lively and joyous celebration,featuring Aarti, and the exciting Dahi Handi(matka) breaking ceremony, offering aunique cultural experience.",
             img:[J1 , J2, J3 , J4 , J5]
         }
+        
     ]
     return(
         <>
-        <div className="facilties-heading" style={{margin:'10vh 0px 3vh' , padding:'4vh 0px' , fontSize:'6rem'}}>
-            Events
+        <div className="facilties-heading" id='events-heading'>
+            EVENTS
         </div>
 
         <div className="events-outer-wrapper">
