@@ -7,6 +7,9 @@
 .navbar-hamburger{
     display: none;
 }
+.hamburger-ul{
+    margin-right: 60px;
+}
 .hamburger-ul li{
     margin: 15px 0px;
     cursor: pointer;
@@ -29,11 +32,11 @@
     }
     .navbar-hamburger{
         display: flex;
-        margin-right: 32px;
+        margin-right: 24px;
     }
     .navbar-outer-wrapper{
         padding: 20px 0px 40px 0px;
-        width: 100vw;
+        width: calc(100vw - 64px);
         position: sticky;
         z-index: 300;
         top: 0px;

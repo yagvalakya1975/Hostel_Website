@@ -12,10 +12,14 @@ body {
     body{
       padding: 32px 17px;
     }
+    body{
+      width: calc(100vw - 64px);
+    }
 }
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 code {
