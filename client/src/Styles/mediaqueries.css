@@ -1,0 +1,119 @@
+/* Council Page */
+
+
+
+/* Tab Break Point */
+@media screen and (max-width: 1200px){
+    .warden-article, .hmc-article {
+        width: 100%;
+        margin-bottom: 65px;
+    }
+    .warden-article img ,.hmc-article img{
+        width: 400px;
+    }
+}
+
+/* Mobile Break point */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 50px;
+    }
+    
+    .council-container{
+        margin-top: 72px;
+    }
+    
+    .council-heading {
+        margin-bottom: 70px;
+    }
+    
+    .warden-name,
+    .hmc-name{
+        font-size: 20px;
+        /* margin-bottom: 200px; */
+    }
+    
+    .warden-position ,.hmc-position{
+        font-size: 18px;
+        padding-bottom: 16px;
+    }
+    
+    .warden-article img,.hmc-article img{
+        width: 170px;
+    }
+    
+    .warden-wrapper,.hmc-wrapper{
+        width: 100%;
+        float: none;
+        /* margin-left: 50px; */
+        margin-bottom: 35px;
+    }
+    
+    .hmc{
+        width: 100%;
+    }
+    
+    .name,
+    .name p{
+        font-size: 32px;
+        padding-left: 0;
+        margin-bottom: 10rem;
+    }
+    
+    .hmc-data{
+        float: right;
+        width: 60%;
+    }
+    .hmc-name{
+        font-family: Archivo;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+    }
+    .hmc-wrapper{
+        /* justify-content: start; */
+        height: 100%;
+    }
+    
+    .hmc-social {
+        top: 70%;
+        left: 0;
+    }
+    
+    .hmc-article{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 16px;
+        margin-bottom: 0;
+    }
+    
+        .complaints-heading {
+            margin-left: 0;
+        }
+    
+        .links {
+            width: 100%;
+        }
+    
+        .form-heading p {
+            font-size: 24px;
+            margin-left: 0;
+        }
+    
+        .form{
+            grid-template-columns: 100%;
+        }
+        
+        .complaints-links{
+            padding-left: 0;
+        }
+        
+        #btn{
+            width: 100%;
+        }
+}
+
+
+
