@@ -12,7 +12,7 @@ const Home = ()=>{
     const facilities = [
         {src:tv , name: 'TV ROOM', info:"Whether you're in the mood for a movie night, catching up on your favorite shows, or enjoying live sports, our TV room offers a welcoming space to socialize and connect with your friends."},
         {src:gym , name: 'GYM' , info:"Our gym is a haven for fitness enthusiasts, equipped with state-of-the-art equipment for strength, and flexibility exercises."},
-        {src:gym , name: 'MUSIC ROOM', info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+        // {src:gym , name: 'MUSIC ROOM', info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
         {src:sports, name: 'SPORTS ROOM', info:"Whether you're a pool shark or a foosball fanatic, our sports room offers a fun atmosphere to challenge fellow mates and make new friends."}
     ]
 
@@ -61,7 +61,7 @@ const Home = ()=>{
             <div className='facilities-inner-wrapper'>
                 <div className='facilities-serial'>
                     {
-                        [1,2,3,4].map((serial)=>{
+                        [1,2,3].map((serial)=>{
                             return(
                                 <div className='serial-box' style={{color:current>(serial-1)&&current<=serial?'#8D4F2B':'#F3E2D8'}}>
                                     0{serial}
@@ -71,7 +71,7 @@ const Home = ()=>{
                     }
                 </div>
                 <div style={{width:'100vw' , overflowX:'hidden'}}>
-                <div className='facilities-slide' style={{transform:`translateX(-${100*current}vw )`}}>
+                <div className='facilities-slide' style={window.innerWidth>900?{transform:`translateX(-${100*current}vw )`}:{}}>
                     {
                         facilities.map((facility)=>{
                             return(
