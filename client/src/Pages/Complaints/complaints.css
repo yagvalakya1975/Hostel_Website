@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&display=swap');
+
+body {
+    font-family: "DM Serif Display", system-ui;
+    font-family: "Archivo", system-ui;
+}
+
+.complaints-container {
+    margin: 5rem auto;
+    overflow-x: hidden;
+}
+
+.complaints-heading {
+    margin: 1.5rem;
+    margin-top: 5rem;
+}
+
+.complaints-links{
+    width: 100%;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-left: 48px;
+}
+
+.links{
+    width: 340px;
+    /* height: 60px; */
+    /* border: 2px solid black; */
+}
+
+.linkicon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.complaints-links a{
+    text-align: center;
+    /* padding-left: 14px; */
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.complaints-links hr{
+    color: black;
+    margin-top: 15px;
+}
+
+.form-heading p{
+    font-family: Archivo;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #8D4F2B;
+    margin-left: 1.5rem;
+}
+
+.complaints-form{
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+form{
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+.label{
+    /* width: 50%; */
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+
+.input1,.input2{
+    /* width: 50%; */
+    /* height: 54px; */
+    font-size: 17px;
+    background-color: #F7EAE2;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.input1::placeholder,.input2::placeholder{
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: #B8B8B8;
+}
+
+.input2{
+    grid-column: 1/3;
+}
+
+#Body{
+    grid-column: 1/3;
+    height: 250px;
+    resize: none;
+}
+
+#btn{
+    width: 250px;
+    padding: 32px 16px;
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    background-color: #E7C5B1;
+    /* float: right; */
+    justify-self: end;
+}
+
+@media screen and (min-width: 600px){
+    #btn{
+        grid-column: 2/3;
+    }
+}
