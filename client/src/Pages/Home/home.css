@@ -66,6 +66,9 @@
     display: flex;
     width: 100vw;
 }
+.facilities-slide-outer{
+    width: 100vw;
+}
 .facility-img img{
     width: 33vw;
 }
@@ -110,16 +113,26 @@
         font-size: 5vw;
         /* width: 25vw; */
     } 
+    .facility-box{
+        width: 85vw;
+    }
     .facilities-wrapper{
         margin-bottom: 170px;
     }
     .facility-img img{
         width:80vw
     }
+    .facilities-slide-outer{
+        width: 85vw;
+    }
     .facility-img{
-        /*width: 100vw;*/
+        width: 85vw;
+        padding: 0px;
         display: flex;
         margin: 20px 0px;
+    }
+    .facility-name{
+        width: 85vw;
     }
 }
 @media screen and (max-width:800px) {
@@ -131,9 +144,6 @@
         position: sticky;
         top: 80px;
         background-color: #FDF3EE;
-    }
-    .facility-name{
-        width: 90vw;
     }
     .facility-info{
         width: 80vw;

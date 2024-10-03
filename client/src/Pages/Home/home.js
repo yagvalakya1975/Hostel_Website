@@ -70,7 +70,7 @@ const Home = ()=>{
                         })
                     }
                 </div>
-                <div style={{width:'100vw' , overflowX:'hidden'}}>
+                <div className='facilities-slide-outer' style={{ overflowX:'hidden'}}>
                 <div className='facilities-slide' style={window.innerWidth>900?{transform:`translateX(-${100*current}vw )`}:{}}>
                     {
                         facilities.map((facility)=>{
