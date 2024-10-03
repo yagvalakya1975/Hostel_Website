@@ -24,13 +24,14 @@ const Council = () => {
       email: "warden.brahmaputra@iitg.ac.in",
       phone: "+91 361 2582430",
     },
-    {
-      src: assward,
-      name: "Prof. Krishna Pada Bhabak",
-      position: "associate warden",
-      email: "kbhabak@iitg.ac.in",
-      phone: "+91 361 2583476",
-    },
+    // },
+    // {
+    //   src: assward,
+    //   name: "Prof. Krishna Pada Bhabak",
+    //   position: "associate warden",
+    //   email: "kbhabak@iitg.ac.in",
+    //   phone: "+91 361 2583476",
+    // },
   ];
 
   const hmc = [
