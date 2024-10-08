@@ -34,6 +34,6 @@ const ComplainSchema = new mongoose.Schema({
 
 
 
-const Complain = new mongoose.model("Complain" , ComplainSchema);
+const Complain = mongoose.model("Complain" , ComplainSchema);
 
 module.exports = Complain;

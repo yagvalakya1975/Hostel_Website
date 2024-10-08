@@ -58,7 +58,7 @@ const Navbar = () => {
       {open && (
         <div
           style={{
-            width: "90vw",
+            width: "calc(100vw - 17px)",
             height: `calc(100vh + 50px)`,
             marginTop: "-50px",
             backgroundColor: "#FDF3EE",

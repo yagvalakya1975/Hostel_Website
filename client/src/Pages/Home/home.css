@@ -108,22 +108,27 @@
         font-size: 5.5vw;
     }
 }
+@media screen and (max-width:1000px) {
+    .heading-wrapper{
+        margin: 7vh 0px 4vw 0px;
+    }
+}
 @media screen and (max-width:900px) {
     .facility-name{
         font-size: 5vw;
         /* width: 25vw; */
     } 
     .facility-box{
-        width: 85vw;
+        width: calc(100vw - 34px);
     }
     .facilities-wrapper{
         margin-bottom: 170px;
     }
     .facility-img img{
-        width:80vw
+        width:calc(100vw - 34px)
     }
     .facilities-slide-outer{
-        width: 85vw;
+        width: calc(100vw - 34px);
     }
     .facility-img{
         width: 85vw;
@@ -132,7 +137,13 @@
         margin: 20px 0px;
     }
     .facility-name{
-        width: 85vw;
+        width: calc(100vw - 34px);
+    }
+    .facility-info{
+        width: calc(100vw - 34px);
+        margin: 0px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width:800px) {
@@ -144,11 +155,6 @@
         position: sticky;
         top: 80px;
         background-color: #FDF3EE;
-    }
-    .facility-info{
-        width: 80vw;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
     }
     .facilities-slide{
         flex-direction: column;
@@ -167,7 +173,7 @@
         width: 45%;
     }
     .info-wrapper{
-        font-size: 2.4vw;
+        font-size: 2.8vw;
     }
     .main-img-wrapper{
         margin: 15px 0px;
@@ -176,5 +182,37 @@
 @media screen and (max-width:500px) {
     .main-heading{
         font-size:10.3vw ;
+    }
+    .facility-info{
+        font-size: 1.1rem;
+    }
+    .info-wrapper{
+        font-size: 3.2vw;
+    }
+    .facilities-serial{
+        top: 60px;
+    }
+} 
+@media screen and (max-width:400px) {
+    .facilities-wrapper{
+        margin-bottom: 220px;
+    }
+}
+@media screen and (max-width:350px) {
+    .facility-info{
+        font-size: 1rem;
+    }
+    .info-wrapper{
+        font-size: 0.9rem;
+    }
+    .facilities-serial{
+        top: 30px;
+    }
+}
+@media screen and (max-width:300px) {
+    .facility-info{
+        font-size: 0.85rem;
+    }.info-wrapper{
+        font-size: 0.8rem;
     }
 }

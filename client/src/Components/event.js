@@ -56,7 +56,8 @@ const Event = ({ event }) => {
           className="event-slider"
           style={{
             transform: `translateX(-${
-              current * width + (current * 1600) / window.innerWidth
+              current *width + (current * 1700) / window.innerWidth
+              // current * width + (width==45?((current * 1700) / window.innerWidth):0) at 91vw
             }vw)`,
           }}
         >

@@ -32,15 +32,25 @@
     }
     .navbar-hamburger{
         display: flex;
-        margin-right: 16px;
+        /* margin-right: 16px; */
     }
     .navbar-outer-wrapper{
         padding: 20px 0px 40px 0px;
-        width: 90vw;
+        width: calc(100vw - 34px);
         position: sticky;
         z-index: 300;
         top: 0px;
         background-color:#FDF3EE;
         
+    }
+}
+@media screen and (max-width:500px) {
+    .navbar-outer-wrapper{
+        padding: 15px 0px;
+    }
+}
+@media screen and (max-width:350px) {
+    .navbar-outer-wrapper{
+        padding: 5px 0px;
     }
 }

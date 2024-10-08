@@ -45,6 +45,7 @@ const Footer = () => {
         <p className="names">Srinjoy Ghosh</p>
         <p className="names">Vijay Kumar</p>
         <p className="names">Aditya</p>
+        <p className="names">Yasharth Singh</p>
       </div>
     </div>
   );

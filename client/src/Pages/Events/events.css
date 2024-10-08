@@ -55,7 +55,8 @@
     }
     .event-img{
         padding: 0px;
-        padding-right: 16px;
+        /* padding: 0px ; */
+        padding: 0px 8.5px;
     }
     .event-wrapper{
         margin: 0px 0px 20px 0px;
@@ -82,5 +83,10 @@
     }
     .event-slider{
         margin-left:0
+    }
+}
+@media screen and (max-width:800px) {
+    .event-slider-outer{
+        width: calc(100vw - 34px);
     }
 }
