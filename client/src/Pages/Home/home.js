@@ -44,9 +44,9 @@ const Home = ()=>{
             </div>
         </div>
 
-        <div className="info-wrapper">
-        Brahmaputra Hostel, housing nearly a thousand students, is IIT Guwahati’s largest boys' hostel. Established in 2011, it accommodates Ph.D., M.Tech, M.Sc, and B.Tech students. The three-story building offers spacious rooms and modern facilities, creating a vibrant hub for academic and extracurricular activities. In a peaceful setting, the hostel fosters innovation and a strong sense of community, reflecting the strength of the Brahmaputra River.
-        </div>
+        <div className="info-wrapper">Housing nearly thousand students, the hostel to its might is named aptly as Brahmaputra. The hostel began to function from academic year 2011-2012. It is boys hostel and boarders in the hostel are from various streams mainly pursuing their Ph.D, M.Tech, M.Sc, B.Tech.It is a three floored building with spacious rooms and all other facilities incorporated. The hostel is a centre for various activities. Hostel Brahmaputra is the highest accommodating hostel in the history of IIT Guwahati.
+<br/>
+Constructed in peaceful and playful environment, it imparts enthusiasm and endeavour in the students. The hostel is always filled with enormously talented students who are always eager for innovation.The boarders in the hostel cultivate the feeling of oneness standing unite and as fierce as The Brahmaputra River.</div>
 
         <div className="main-img-wrapper">
             <img src={building} alt=''/>
