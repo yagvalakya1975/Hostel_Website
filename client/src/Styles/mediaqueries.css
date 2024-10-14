@@ -118,6 +118,18 @@
             grid-template-columns: 100%;
         }
         
+        .input1,.label{
+            grid-column: 1/3;
+        }
+        
+        .label:nth-child(2){
+            grid-row: 3/4;
+        }
+        
+        #Phone{
+            grid-row: 6/7;
+        }
+        
         .complaints-links{
             padding-left: 0;
         }
