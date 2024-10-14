@@ -24,6 +24,7 @@ const Footer = () => {
       <div className="footer-details">
         <img className="logo" src={logo} alt="" />
         <div className="footer-links">
+          <Link to="/services">SERVICES</Link>
           <Link to="/council">COUNCIL</Link>
           <Link to="/events">EVENTS</Link>
           <Link to="/complaints">COMPLAIN PORTAL</Link>
