@@ -12,7 +12,16 @@ import maintsec from "./assets/AbhishekSharma_HMC.JPG";
 import litsec from "./assets/Ashutosh_HMC.JPG";
 import servsec from "./assets/Anupam_HMC.JPG";
 import mediahead from "./assets/HarshShukla_HMC.JPG";
-import HMC from "../../Components/hmc";
+import jsp1 from "./assets/joint-sports-2.jpg";
+import jsp2 from "./assets/joint-sports-1.jpg";
+import jserv from "./assets/joint-serv.jpg";
+import jcult from "./assets/joint-cult.jpg";
+import jtech from "./assets/joint-tech.jpg";
+import jlit from "./assets/joint-lit.jpg";
+import jwelf from "./assets/joint-welf.jpg";
+import jmaint2 from "./assets/joint-maint-2.jpg";
+import jmaint1 from "./assets/joint-maint-1.jpg";
+import HMC from "../../Components/hmc"; 
 // import "../../Styles/mediaqueries.css";
 
 const Council = () => {
@@ -24,14 +33,13 @@ const Council = () => {
       email: "warden.brahmaputra@iitg.ac.in",
       phone: "+91 361 2582430",
     },
-    // },
-    // {
-    //   src: assward,
-    //   name: "Prof. Krishna Pada Bhabak",
-    //   position: "associate warden",
-    //   email: "kbhabak@iitg.ac.in",
-    //   phone: "+91 361 2583476",
-    // },
+    {
+      src: assward,
+      name: "Prof. Krishna Pada Bhabak",
+      position: "associate warden",
+      email: "kbhabak@iitg.ac.in",
+      phone: "+91 361 2583476",
+    },
   ];
 
   const hmc = [
@@ -127,6 +135,81 @@ const Council = () => {
       mail: "harsh.shukla@iitg.ac.in",
     },
   ];
+  
+  const jointHmc =[
+    {
+      src: jsp1,
+      name: "Arnav tiku",
+      position: "Joint sports secretary",
+      insta: "https://www.instagram.com/arnav.217?igsh=MW5hMHl0bmw3NjQ0Yw==",
+      linkedin: "https://www.linkedin.com/in/arnav-tiku-iitg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail : "t.arnav@iitg.ac.in"
+    },
+    {
+      src: jsp2,
+      name: "Dhiyanesh G",
+      position: "Joint Sports secretary",
+      insta: "https://www.instagram.com/dhiya.gcj?igsh=aWRvcnBobmk3Z2Uy",
+      linkedin: "https://www.linkedin.com/in/dhiyanesh-g-2115432a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "g.dhiyanesh@iitg.ac.in"
+    },
+    {
+      src: jserv,
+      name: "Harsha Vardhan Poshala",
+      position: "Joint services secretary",
+      insta: "https://www.instagram.com/harsha.15._?igsh=MXhiNHpiMGl0aDlweg==",
+      linkedin: "https://www.linkedin.com/in/poshala-harsha-vardhan-a05670301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "v.poshala@iitg.ac.in"
+    },
+    {
+      src: jmaint1,
+      name: "Abhinav Soni",
+      position: "Joint Maintenance Secretary",
+      insta: "https://www.instagram.com/abhi9_soni?igsh=dXN1dzk1NDA4dmt5",
+      linkedin: "https://www.linkedin.com/in/abhinav-soni-4484b429a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "abhinavs.2001@iitg.ac.in"
+    },
+    {
+      src: jmaint2,
+      name: "Rishu Jaiswal",
+      position: "Joint Maintenance Secretary",
+      insta: "https://www.instagram.com/rishuu.j?igsh=MXhxbHh1aDBxYmRqdA==",
+      linkedin: "https://www.linkedin.com/in/rishu-jaiswal-4362152a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "r.jaiswal@iitg.ac.in"
+    },
+    {
+      src: jcult,
+      name: "Nimesh Gurjar",
+      position: "Joint Cultural  secretary",
+      insta: "https://www.instagram.com/itsfrozenmind?igsh=MWVnMDJzNHEwdXA1aA==",
+      linkedin: "https://www.linkedin.com/in/nimesh-g-859643286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "g.nimesh@iitg.ac.in"
+    },
+    {
+      src: jwelf,
+      name: "Arpit Ranjan",
+      position: "Joint welfare secretary",
+      insta: "https://www.instagram.com/arpit_2106_?igsh=MTFlcXVodzFrdHRmbA==",
+      linkedin: "https://www.linkedin.com/in/arpit-ranjan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "r.arpit@iitg.ac.in"
+    },
+    {
+      src: jlit,
+      name: "Chinmay Torvi",
+      position: "Joint Literary Seceretary ",
+      insta: "",
+      linkedin: "https://www.linkedin.com/in/chinmay-torvi-8b48b3287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "c.torvi@iitg.ac.in"
+    },
+    {
+      src: jtech,
+      name: "Aditya Jain",
+      position: "Joint Technical Secretary",
+      insta: "https://www.instagram.com/adi_tyaa_26?utm_source=qr&igsh=MWprYzZhNzh5bm5zMA==",
+      linkedin: "https://www.linkedin.com/in/adityaa26675?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "adityajain@iitg.ac.in"
+    },
+  ]
 
   return (
     <div className="council-container">
@@ -148,6 +231,18 @@ const Council = () => {
         </div>
         <div className="hmc-wrapper">
           {hmc.map((info) => {
+            return <HMC member={info} />;
+          })}
+        </div>
+      </div>
+      
+      <div className="hmc">
+        <div className="name joint-name" id="sticky">
+          <p>JOINT</p>
+          <p>HMC</p>
+        </div>
+        <div className="hmc-wrapper">
+          {jointHmc.map((info) => {
             return <HMC member={info} />;
           })}
         </div>

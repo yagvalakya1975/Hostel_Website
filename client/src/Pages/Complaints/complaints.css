@@ -138,6 +138,20 @@ form{
     background-color: #E7C5B1;
     /* float: right; */
     justify-self: end;
+    transition: all 500ms ease;
+}
+
+#btn:hover{
+    background-color: #e4bba2;
+    box-shadow: 5px 5px gray;
+}
+
+.status{
+    font-size: 25px;
+    color: red;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 600px){

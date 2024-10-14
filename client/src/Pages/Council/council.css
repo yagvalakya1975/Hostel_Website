@@ -66,6 +66,7 @@ hr{
     text-align: left;
     color: #6D3D21;
     padding-bottom: 15px;
+    width: 75%;
 }
 
 .warden-position{
@@ -122,6 +123,20 @@ hr{
     /* background-color: wheat; */
 }
 
+.joint-name{
+    display: block;
+    width: 20%;
+    float: left;
+    /* text-align: right; */
+}
+
+.joint-name p{
+    padding-left: 0;
+    margin-left: 16px;
+    display: block;
+    width: 100%;
+}
+
 .hmc-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -168,4 +183,8 @@ hr{
 .icons{
     font-size: 26px;
     padding-left: 10px;
+}
+
+.first-icon{
+    padding-left: 0;
 }
