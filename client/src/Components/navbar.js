@@ -12,16 +12,18 @@ const Navbar = () => {
     <>
       <div className="navbar-outer-wrapper">
         <div className="navbar-inner-wrapper">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" onClick={() => {
+                navigate("/", { replace: true });
+              }}/>
         </div>
         <div className="navbar-inner-wrapper" id="navbar-hor">
           <ul style={{ color: "#1F1F1F", listStyle: "none", display: "flex" }}>
             <li
               onClick={() => {
-                navigate("/", { replace: true });
+                navigate("/services", { replace: true });
               }}
             >
-              HOME
+              SERVICES
             </li>
             <li
               onClick={() => {
@@ -86,11 +88,11 @@ const Navbar = () => {
             >
               <li
                 onClick={() => {
-                  navigate("/", { replace: true });
+                  navigate("/services", { replace: true });
                   setOpen(false);
                 }}
               >
-                HOME
+                SERVICES
               </li>
               <li
                 onClick={() => {
