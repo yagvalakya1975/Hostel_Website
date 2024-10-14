@@ -26,7 +26,7 @@ const HMC = ({ member }) => {
           <p>{member.position.toUpperCase()}</p>
         </div>
         <div className="hmc-social">
-          <CiInstagram className="icons" onClick={handleInsta} />
+          <CiInstagram className="icons first-icon" onClick={handleInsta} />
           <FaLinkedin className="icons" onClick={handleLinkedin} />
           <CiMail className="icons" onClick={handleMail} />
         </div>
