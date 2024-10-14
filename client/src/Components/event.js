@@ -7,7 +7,7 @@ const Event = ({ event }) => {
   const [width, setWidth] = useState(45);
 
   useEffect(() => {
-    if (window.innerWidth <= 1000) setWidth(85);
+    if (window.innerWidth <= 1000) setWidth(100 - 3400/window.innerWidth);
     else setWidth(45);
   }, []);
 
@@ -56,7 +56,7 @@ const Event = ({ event }) => {
           className="event-slider"
           style={{
             transform: `translateX(-${
-              current *width + (current * 1700) / window.innerWidth
+              current*width + ((current+0.5) * 1700) / window.innerWidth
               // current * width + (width==45?((current * 1700) / window.innerWidth):0) at 91vw
             }vw)`,
           }}

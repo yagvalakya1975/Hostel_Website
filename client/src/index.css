@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FDF3EE;
   padding: 32px;
+  color: #3D3D3D;
 }
 @media screen and (max-width:750px) {
     body{

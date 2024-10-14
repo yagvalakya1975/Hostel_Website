@@ -1,0 +1,16 @@
+.iframe{
+    width: 60%;
+}
+.pdf-cross{
+    right: 40px;
+    top: 0px;
+}
+@media screen and (max-width:750px) {
+    .iframe{
+        width: 100%;
+    }
+    .pdf-cross{
+        top: -40px;
+        right: 0px;
+    }
+}

@@ -17,6 +17,7 @@
     margin-right: 20vw;
     font-size: 1rem;
     text-align: left;
+    line-height: 25px;
 }
 .event-wrapper{
     margin: 0px 0px 10vh 0px;
@@ -43,7 +44,7 @@
     margin: 20px 0px;
 }
 .event-slider-outer{
-    width: 85vw;
+    /* width: 85vw; */
     overflow-x: hidden;
 }
 @media screen and (max-width:1000px) {
@@ -87,6 +88,9 @@
 }
 @media screen and (max-width:800px) {
     .event-slider-outer{
+        width: calc(100vw - 34px);
+    }
+    .event-img{
         width: calc(100vw - 34px);
     }
 }
