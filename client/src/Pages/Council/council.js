@@ -1,26 +1,28 @@
 import "./council.css";
 import Warden from "../../Components/warden";
-import wardenim from "./assets/1112Arunasis_Chakraborty_1.jpg";
-import assward from "./assets/3783faculty.jpg";
-import gensec from "./assets/Yasharth_HMC.JPG";
-import assgen from "./assets/Anany_HMC.JPG";
-import sportsec from "./assets/AryanRaj_HMC.JPG";
-import techsec from "./assets/Adi_HMC.jpg";
-import cultsec from "./assets/AyushSahu_HMC.JPG";
-import welfsec from "./assets/AbhinavG_HMC.JPG";
-import maintsec from "./assets/AbhishekSharma_HMC.JPG";
-import litsec from "./assets/Ashutosh_HMC.JPG";
-import servsec from "./assets/Anupam_HMC.JPG";
-import mediahead from "./assets/HarshShukla_HMC.JPG";
-import jsp1 from "./assets/joint-sports-2.jpg";
-import jsp2 from "./assets/joint-sports-1.jpg";
-import jserv from "./assets/joint-serv.jpg";
-import jcult from "./assets/joint-cult.jpg";
-import jtech from "./assets/joint-tech.jpg";
-import jlit from "./assets/joint-lit.jpg";
-import jwelf from "./assets/joint-welf.jpg";
-import jmaint2 from "./assets/joint-maint-2.jpg";
-import jmaint1 from "./assets/joint-maint-1.jpg";
+import wardenim from "./assets/WardenBPH.jpg";
+import assward1 from "./assets/AsWarden1.jpg";
+import assward2 from "./assets/AsWarden2.jpg";
+import gensec from "./assets/GenSec.png";
+import assgen from "./assets/AsGenSec.jpg";
+import sportsec from "./assets/Sports.png";
+import techsec from "./assets/Techy.png";
+import cultsec from "./assets/Culty.png";
+import welfsec from "./assets/Welfy.png";
+import maintsec from "./assets/Mantainence.png";
+import litsec from "./assets/Literary.png";
+import servsec from "./assets/Services.png";
+import mediahead from "./assets/Media.png";
+import jsp1 from "./assets/Jsports1.png";
+import jsp2 from "./assets/Jsports2.png";
+import jserv from "./assets/Jservices.png";
+import jcult from "./assets/JCulty.png";
+import jtech1 from "./assets/Jtechy1.png";
+import jtech2 from "./assets/Jtechy2.png";
+import jlit from "./assets/Jliterary.png";
+import jwelf from "./assets/Jwelfy.png";
+import jmaint1 from "./assets/JManty2.png";
+import jmaint2 from "./assets/JManty1.png";
 import HMC from "../../Components/hmc"; 
 // import "../../Styles/mediaqueries.css";
 
@@ -28,186 +30,201 @@ const Council = () => {
   const warden = [
     {
       src: wardenim,
-      name: "Prof. Arunasis Chakraborty",
+      name: "Prof. Biranchi Panda",
       position: "WARDEN",
       email: "warden.brahmaputra@iitg.ac.in",
-      phone: "+91 361 2582430",
+      phone: "+91 361 258 2684",
     },
     {
-      src: assward,
-      name: "Prof. Krishna Pada Bhabak",
+      src: assward1,
+      name: "Prof. Sparsh Johari",
       position: "associate warden",
-      email: "kbhabak@iitg.ac.in",
-      phone: "+91 361 2583476",
+      email: "sparshjohari@iitg.ac.in",
+      phone: "+91 361 258 3226",
+    },
+    {
+      src: assward2,
+      name: "Prof. Ashwini Sawant",
+      position: "associate warden",
+      email: "ashwinisawant@iitg.ac.in",
+      phone: "+91 361 258 3280",
     },
   ];
 
   const hmc = [
     {
       src: gensec,
-      name: "yasharth singh",
+      name: "abhishek sharma",
       position: "general secretary",
       insta:
-        "https://www.instagram.com/yasharth.singh01?igsh=MTVwdmhkcWx4d2V6eA==",
+        "https://www.instagram.com/abhsharma9192/profilecard/?igsh=OXZlM3ZheWlvb2k0",
       linkedin:
-        "https://www.linkedin.com/in/yasharth-singh-458931230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "https://www.linkedin.com/in/abhishek-sharma-b51069253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       mail: "gs.brahmaputra@iitg.ac.in",
     },
     {
       src: assgen,
-      name: "anany sihare",
+      name: "harshavardhan",
       position: "assosiate general secretary",
       insta:
-        "https://www.instagram.com/anany_sihare27?igsh=MXIxNnk5b25scm1tdw==",
+        "https://www.instagram.com/harsha.153._/",
       linkedin:
-        "https://www.linkedin.com/in/anany-sihare-a22164262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "anany@iitg.ac.in",
-    },
-    {
-      src: sportsec,
-      name: "aryan raj",
-      position: "sports secretary",
-      insta: "https://www.instagram.com/_aryanr?igsh=cmZzOGVwaHl1YXpq",
-      linkedin: "",
-      mail: "aryan.raj@iitg.ac.in",
-    },
-    {
-      src: techsec,
-      name: "adi Jain",
-      position: "technical secretary",
-      insta: "https://www.instagram.com/a_d_i_jain?igsh=MWM2ZXhqajdmcGJiOA==",
-      linkedin:
-        "https://www.linkedin.com/in/adi-jain-230a48261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "j.adi@iitg.ac.in",
+        "https://www.linkedin.com/in/poshala-harsha-vardhan-a05670301/",
+      mail: "v.poshala@iitg.ac.in",
     },
     {
       src: cultsec,
-      name: "ayush sahu",
+      name: "gaurang palekar",
       position: "cultural secretary",
-      insta: "https://www.instagram.com/ayushh_311?igsh=MWZoN3Y1YXE0dm1hZQ==",
+      insta: "https://www.instagram.com/gaurang_palekar",
       linkedin:
-        "https://www.linkedin.com/in/ayush-sahu-134559262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "ayush.s@iitg.ac.in",
+        "https://www.linkedin.com/in/gaurang-palekar-12a4b9287",
+      mail: "palekar@iitg.ac.in",
     },
     {
-      src: servsec,
-      name: "anupam ajey pratap singh",
-      position: "services secretary",
-      insta: "https://www.instagram.com/i_am.aaps?igsh=NTJxOXV3MXE0ODly",
+      src: techsec,
+      name: "aditya jain",
+      position: "technical secretary",
+      insta: "https://www.instagram.com/adi_tyaa_26/",
       linkedin:
-        "https://www.linkedin.com/in/anupamaps190605?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "ss.brahmaputra@iitg.ac.in",
+        "https://www.linkedin.com/in/adityaa26675?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "adityajain@iitg.ac.in",
     },
     {
       src: welfsec,
-      name: "abhinav gundumalla",
+      name: "paras katiyar",
       position: "welfare secretary",
-      insta: "https://www.instagram.com/abhiinormal?igsh=MW15bHk2bnA3cnE1aQ==",
+      insta: "https://www.instagram.com/katiyarparas?igsh=cDR2MGdwaGVjZTFw",
       linkedin:
-        "https://www.linkedin.com/in/abhinav-gundumalla-43a3a0253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "abhinav.g@iitg.ac.in",
+        "https://www.linkedin.com/in/paras-katiyar-73a1b9289",
+      mail: "paras.katiyar@iitg.ac.in",
+    },
+    {
+      src: servsec,
+      name: "abhijeet kumar",
+      position: "services secretary",
+      insta: "",
+      linkedin:
+        "https://www.linkedin.com/in/abhijeetkumar822?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      mail: "ss.brahmaputra@iitg.ac.in",
+    },
+    {
+      src: sportsec,
+      name: "abhishek kumar gond",
+      position: "sports secretary",
+      insta: "https://www.instagram.com/abhishek_iitg1?utm_source=qr&igsh=MTBieGRwajdpcmxhdQ==",
+      linkedin: "https://www.linkedin.com/in/abhishek-kumar-gond-4817ab2ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "abhishek.gond@iitg.ac.in",
     },
     {
       src: maintsec,
-      name: "abhishek sharma",
+      name: "ram mohan reddy",
       position: "maintenance secretary",
       insta:
-        "https://www.instagram.com/abhsharma9192?igsh=MWlmNm1kMGh3YjdrMw==",
-      linkedin: "",
+        "https://www.instagram.com/_vintu_reddy",
+      linkedin: "https://www.linkedin.com/in/ram-mohan-reddy-guduri-ab7a85296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       mail: "ms.brahmaputra@iitg.ac.in",
     },
     {
       src: litsec,
-      name: "ashutosh Singh",
+      name: "chinmay pankaj torvi",
       position: "literary secretary",
-      insta: "https://www.instagram.com/_ashusng_05?igsh=MTNuM2s1cmc5MDhvMw==",
+      insta: "",
       linkedin:
-        "https://www.linkedin.com/in/ashutosh-singh-6609491b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "ashutosh.snh@iitg.ac.in",
+        "https://www.linkedin.com/in/chinmay-torvi-0b52372b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "c.torvi@iitg.ac.in",
     },
     {
       src: mediahead,
-      name: "harsh shukla",
+      name: "pruthvi s h",
       position: "media head",
-      insta: "https://www.instagram.com/shukla._.harsh?igsh=d2ExOTFucDg1eDdm",
+      insta: "https://www.instagram.com/pruthvishaleholi",
       linkedin:
-        "https://www.linkedin.com/in/harsh-shukla-245316167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "harsh.shukla@iitg.ac.in",
+        "https://www.linkedin.com/in/pruthvi-haleholi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      mail: "h.pruthvi@iitg.ac.in",
     },
   ];
   
   const jointHmc =[
     {
       src: jsp1,
-      name: "Arnav tiku",
+      name: "Uditansh Raghuvanshi",
       position: "Joint sports secretary",
-      insta: "https://www.instagram.com/arnav.217?igsh=MW5hMHl0bmw3NjQ0Yw==",
-      linkedin: "https://www.linkedin.com/in/arnav-tiku-iitg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail : "t.arnav@iitg.ac.in"
+      insta: "https://www.instagram.com/_udit__12?igsh=Yzh6bncza3JnY2Rh",
+      linkedin: "https://www.linkedin.com/in/uditansh-raghuvanshi-864ba833a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail : "r.uditansh@iitg.ac.in"
     },
     {
       src: jsp2,
-      name: "Dhiyanesh G",
+      name: "Divyanshu kumar",
       position: "Joint Sports secretary",
-      insta: "https://www.instagram.com/dhiya.gcj?igsh=aWRvcnBobmk3Z2Uy",
-      linkedin: "https://www.linkedin.com/in/dhiyanesh-g-2115432a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "g.dhiyanesh@iitg.ac.in"
+      insta: "https://www.instagram.com/divyanshuc7/",
+      linkedin: "https://www.linkedin.com/in/divyanshu-kumar-4806bb342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "divyanshu.kumar@iitg.ac.in"
     },
     {
-      src: jserv,
-      name: "Harsha Vardhan Poshala",
-      position: "Joint services secretary",
-      insta: "https://www.instagram.com/harsha.15._?igsh=MXhiNHpiMGl0aDlweg==",
-      linkedin: "https://www.linkedin.com/in/poshala-harsha-vardhan-a05670301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "v.poshala@iitg.ac.in"
+      src: jtech1,
+      name: "Ajinkya Zarapkar",
+      position: "Joint Technical Secretary",
+      insta: "https://www.instagram.com/_.ajinkya._19",
+      linkedin: "https://www.linkedin.com/in/ajinkya-zarapkar-8a87a7317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "z.prashant@iitg.ac.in"
+    },
+    {
+      src: jtech2,
+      name: "Sukant Agarwal",
+      position: "Joint Technical Secretary",
+      insta: "https://www.instagram.com/sukant_557?igsh=b3gxZ2w0NjZremxz",
+      linkedin: "https://www.linkedin.com/in/sukant-agrawal-894536317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "a.sukant@iitg.ac.in"
     },
     {
       src: jmaint1,
-      name: "Abhinav Soni",
+      name: "Bishal Sutradhar",
       position: "Joint Maintenance Secretary",
-      insta: "https://www.instagram.com/abhi9_soni?igsh=dXN1dzk1NDA4dmt5",
-      linkedin: "https://www.linkedin.com/in/abhinav-soni-4484b429a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "abhinavs.2001@iitg.ac.in"
+      insta: "https://www.instagram.com/__bishal__43?igsh=c3RuN3IyZzhqYjln",
+      linkedin: "https://www.linkedin.com/in/bishal-sutradhar-3070a4337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "b.sutradhar@iitg.ac.in"
     },
     {
       src: jmaint2,
-      name: "Rishu Jaiswal",
+      name: "Yash Jaiswal",
       position: "Joint Maintenance Secretary",
-      insta: "https://www.instagram.com/rishuu.j?igsh=MXhxbHh1aDBxYmRqdA==",
-      linkedin: "https://www.linkedin.com/in/rishu-jaiswal-4362152a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "r.jaiswal@iitg.ac.in"
+      insta: "https://www.instagram.com/its_yash.jaiswal?igsh=MThicnBwMDV3aXV0ZQ==",
+      linkedin: "https://www.linkedin.com/in/yash-j-75588131b/",
+      mail: "yash.jaiswal@iitg.ac.in"
     },
     {
       src: jcult,
-      name: "Nimesh Gurjar",
-      position: "Joint Cultural  secretary",
-      insta: "https://www.instagram.com/itsfrozenmind?igsh=MWVnMDJzNHEwdXA1aA==",
-      linkedin: "https://www.linkedin.com/in/nimesh-g-859643286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "g.nimesh@iitg.ac.in"
+      name: "Shreyash Anand",
+      position: "Joint Cultural Secretary",
+      insta: "https://www.instagram.com/inquisitor.718/",
+      linkedin: "https://www.linkedin.com/in/shreyash-anand-89982a354",
+      mail: "a.shreyash@iitg.ac.in"
     },
     {
       src: jwelf,
-      name: "Arpit Ranjan",
-      position: "Joint welfare secretary",
-      insta: "https://www.instagram.com/arpit_2106_?igsh=MTFlcXVodzFrdHRmbA==",
-      linkedin: "https://www.linkedin.com/in/arpit-ranjan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "r.arpit@iitg.ac.in"
+      name: "Manas Dhote",
+      position: "Joint Welfare Secretary",
+      insta: "https://www.instagram.com/manasxdhote?igsh=eWVzdDE3c2J3enNj",
+      linkedin: "https://www.linkedin.com/in/manas-dhote-199b9b33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "d.manas@iitg.ac.in"
+    },
+    {
+      src: jserv,
+      name: "Tanmay Satyaj Dwivedi",
+      position: "Joint Services Secretary",
+      insta: "https://www.instagram.com/rottenlife101?igsh=MWhpemwzbWY3N2wzeQ==",
+      linkedin: "https://www.linkedin.com/in/tanmay-satyaj-dwivedi-63a02a330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "t.dwivedi@iitg.ac.in"
     },
     {
       src: jlit,
-      name: "Chinmay Torvi",
+      name: "Yuva Sai Harshith",
       position: "Joint Literary Seceretary ",
       insta: "",
-      linkedin: "https://www.linkedin.com/in/chinmay-torvi-8b48b3287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "c.torvi@iitg.ac.in"
-    },
-    {
-      src: jtech,
-      name: "Aditya Jain",
-      position: "Joint Technical Secretary",
-      insta: "https://www.instagram.com/adi_tyaa_26?utm_source=qr&igsh=MWprYzZhNzh5bm5zMA==",
-      linkedin: "https://www.linkedin.com/in/adityaa26675?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail: "adityajain@iitg.ac.in"
+      linkedin: "https://www.linkedin.com/in/yuva-sai-harshith-267a1a312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      mail: "p.harshith@iitg.ac.in"
     },
   ]
 

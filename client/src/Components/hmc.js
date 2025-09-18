@@ -4,16 +4,17 @@ import { CiMail } from "react-icons/ci";
 
 const HMC = ({ member }) => {
   const handleInsta = () => {
-    window.location.href = `${member.insta}`;
+    window.open(member.insta, '_blank');
   };
 
   const handleLinkedin = () => {
-    window.location.href = `${member.linkedin}`;
+    window.open(member.linkedin, '_blank');
   };
 
   const handleMail = () => {
-    window.location.href = `mailto:${member.mail}`;
+    window.open(`mailto:${member.mail}`, '_blank');
   };
+
 
   return (
     <div className="hmc-article">

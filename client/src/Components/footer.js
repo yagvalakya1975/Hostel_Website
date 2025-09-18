@@ -42,11 +42,11 @@ const Footer = () => {
         <p className="names designer">Apratul Vasu</p>
 
         <p className="head">Developed By</p>
-        <p className="names">Adi Jain</p>
         <p className="names">Srinjoy Ghosh</p>
         <p className="names">Vijay Kumar</p>
-        <p className="names">Aditya</p>
-        <p className="names">Yasharth Singh</p>
+        <p className="names">Aditya Jain</p>
+        <p className="names">Abhishek Sharma</p>
+        <p className="names">Adi Jain</p>
       </div>
     </div>
   );
