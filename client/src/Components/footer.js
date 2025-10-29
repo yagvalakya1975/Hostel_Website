@@ -45,8 +45,10 @@ const Footer = () => {
         <p className="names">Srinjoy Ghosh</p>
         <p className="names">Vijay Kumar</p>
         <p className="names">Aditya Jain</p>
-        <p className="names">Abhishek Sharma</p>
         <p className="names">Adi Jain</p>
+        <p className="names">Yasharth Singh</p>
+        <p className="names">Abhishek Sharma</p>
+        <br></br>
       </div>
     </div>
   );

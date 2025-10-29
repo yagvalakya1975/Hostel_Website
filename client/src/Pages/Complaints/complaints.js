@@ -3,45 +3,17 @@ import "./complaints.css";
 import { MdArrowOutward } from "react-icons/md";
 
 const Complaints = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [room, setRoom] = useState('');
-  const [subject, setSubject] = useState('');
-  const [body, setBody] = useState('');
   const [status, setStatus] = useState('');
-
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxYEpMU9lciiMzSV1B97rHI_WnvtX2BzXVci3jJ5N__O0eXvUPYNIZy7V5AvyekMq1ZmQ/exec';
-
   useEffect(() => {
     if (status) {
       setTimeout(() => {
-        setStatus('');
+        setStatus(' ');
       }, 5000);
     }
   }, [status]);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('room', room);
-    formData.append('subject', subject);
-    formData.append('body', body);
-    setStatus('Submitting...'); // Provide immediate feedback to the user
-    try {
-      await fetch(scriptURL, { method: 'POST', body: formData });
-      alert('Thank you! Your form has been submitted successfully.');
-      setTimeout(() => {
-        window.location.reload();  // Optionally reload after submission
-      }, 200);
-    } catch (error) {
-      console.error('Error!', error.message);
-      setStatus('Error submitting form. Please try again later.');
-    }
+    setStatus('Your Complaint has been submitted');
   };
 
   return (
@@ -81,76 +53,102 @@ const Complaints = () => {
       </div>
 
       <div className="complaints-form">
-        <form className="form" onSubmit={handleSubmit}>
+        <form
+          className="form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLScVhHMd3EyFU8CBhKw3EPAR47zdmgH90fn9Jz1y_zrD_mNVzg/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onSubmit={handleSubmit}
+          >
+          
           <label htmlFor="Name" className="label">NAME</label>
           <label htmlFor="Mail" className="label">IITG EMAIL</label>
+
           <input
             type="text"
             className="input1"
             id="Name"
-            name="name"
+            name="entry.1992745829"
             placeholder="Enter your full name"
-            onChange={(e) => setName(e.target.value)}
             required
           />
-
-          
           <input
             type="email"
             className="input1"
             id="Mail"
-            name="email"
+            name="entry.1134057788"
             placeholder="Enter your college email"
-            onChange={(e) => setEmail(e.target.value)}
             required
           />
 
-          <label htmlFor="Phone" className="label">PHONE NUMBER</label>
+          <label htmlFor="Roll" className="label">ROLL NO.</label>
           <label htmlFor="Room" className="label">ROOM NUMBER</label>
+
           <input
             type="text"
             className="input1"
-            id="Phone"
-            name="phone"
-            placeholder="Enter your phone number"
-            onChange={(e) => setPhone(e.target.value)}
+            id="Roll"
+            name="entry.480102135"
+            placeholder="Enter your roll number"
             required
           />
-
-          
           <input
             type="text"
             className="input1"
             id="Room"
-            name="room"
+            name="entry.1799059936"
             placeholder="Enter your room number"
-            onChange={(e) => setRoom(e.target.value)}
             required
           />
 
-          <label htmlFor="Subject" className="label">SUBJECT OR COMPLAINT</label>
+          <label htmlFor="Phone" className="label">PHONE NUMBER</label>
+          <label htmlFor="Degree" className="label">DEGREE (B.Tech/M.Tech/etc.)</label>
+
           <input
             type="text"
-            className="input2"
+            className="input1"
+            id="Phone"
+            name="entry.2118880637"
+            placeholder="Enter your phone number"
+            required
+          />
+          <input
+            type="text"
+            className="input1"
+            id="Degree"
+            name="entry.991367062"
+            placeholder="Enter your degree(B.Tech/M.Tech/etc.)"
+            required
+          />
+          
+          <label htmlFor="Subject" className="label" style={{ gridColumn: "1 / 3" }}>SUBJECT OR COMPLAINT</label>
+          <input
+            type="text"
+            className="input1"
             id="Subject"
-            name="subject"
+            name="entry.1746593657"
             placeholder="Enter subject"
-            onChange={(e) => setSubject(e.target.value)}
+            style={{ gridColumn: "1 / 3" }}
             required
           />
 
-          <label htmlFor="Body" className="label">BODY</label>
+          <label htmlFor="Body" className="label" style={{ gridColumn: "1 / 3" }}>BODY</label>
           <textarea
             className="input1"
             id="Body"
-            name="body"
+            name="entry.1342868700"
             placeholder="Write your complaint (max 200 words)"
-            onChange={(e) => setBody(e.target.value)}
+            style={{ gridColumn: "1 / 3" }}
+            required
           />
+          
+          {(status==='') && (<input type="submit" id="btn" value="SUBMIT" />)}
 
-          <input type="submit" id="btn" value="SUBMIT" />
         </form>
+
+        <iframe name="hidden_iframe" style={{ display: "none" }}></iframe>
       </div>
+
 
       <div className="status">{status}</div>
     </div>
