@@ -1,3 +1,3 @@
 Brahmaputra Hostel, IITG
 Webpage
-https://brahmaputrahostel.onrender.com
+[https://brahmaputra-hostel-website.vercel.app/]
