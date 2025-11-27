@@ -28,8 +28,8 @@ import jmaint2 from "./assets/JManty1.png";*/
 import HMC from "../../Components/hmc"; 
 // import "../../Styles/mediaqueries.css";
 
-const SHEET_ID = "2PACX-1vTD6ruT4Rw3OmdHQAJksvZNfLhCOoECcctDntEzWVCsP_s32vPAxO9hF6A1yK5YqSWf8Qk4OBQMU7sY";
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTD6ruT4Rw3OmdHQAJksvZNfLhCOoECcctDntEzWVCsP_s32vPAxO9hF6A1yK5YqSWf8Qk4OBQMU7sY/pubhtml";
+//const SHEET_ID = "2PACX-1vTD6ruT4Rw3OmdHQAJksvZNfLhCOoECcctDntEzWVCsP_s32vPAxO9hF6A1yK5YqSWf8Qk4OBQMU7sY";
+//const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTD6ruT4Rw3OmdHQAJksvZNfLhCOoECcctDntEzWVCsP_s32vPAxO9hF6A1yK5YqSWf8Qk4OBQMU7sY/pubhtml";
 
 const Council = () => {
   const [warden, setWarden] = useState([]);
@@ -37,7 +37,7 @@ const Council = () => {
   const [jointHmc, setJointHmc] = useState([]);
   useEffect(() => {
     fetch(
-      "https://opensheet.elk.sh/1xjI4HRQfPdwkL335CvJ5LJwdeO2Zg5Tas4Wa-po6soc/Sheet1"
+      "https://opensheet.elk.sh/1xjI4HRQfPdwkL335CvJ5LJwdeO2Zg5Tas4Wa-po6soc/HMC"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -53,14 +53,6 @@ const Council = () => {
       })
       .catch((err) => console.error("Failed to fetch sheet data:", err));
   }, []);
-
-  const convertGoogleDriveLink = (url) => {
-    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)\//);
-    if (match && match[1]) {
-      return `https://drive.google.com/uc?export=view&id=${match[1]}`;
-    }
-    return url;
-  };
 
 
   return (

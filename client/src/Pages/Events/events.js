@@ -1,5 +1,7 @@
 import './events.css'
 import Event from '../../Components/event.js'
+import { useEffect, useState} from 'react';
+/*
 import H1 from './assets/H1.JPG'
 import H2 from './assets/H2.JPG'
 import H3 from './assets/H3.JPG'
@@ -29,10 +31,10 @@ import I3 from './assets/I3.jpg'
 import I4 from './assets/I4.jpg'
 import I5 from './assets/I5.jpg'
 import I6 from './assets/I6.jpg'
-import I7 from './assets/I7.jpg'
+import I7 from './assets/I7.jpg'*/
 
 const Events = ()=>{
-    const data = [
+    /*const data = [
         {
             name:'RAMLEELA',
             info:"Our hostel's Ramleela event, performed by freshers is a vibrant and engaging celebration,bringing the epic tale of Lord Rama to life through dramatic performances, traditional music, dance,and lively storytelling. ",
@@ -41,12 +43,12 @@ const Events = ()=>{
         {
             name:'HOSTEL DAY',
             info:"On April every year, Brahmaputra celebrates its hostel day. A day wherewe celebrate our Grandeur, our victories and the spirit of our hostel unity. Bejeweled and bedecked as a newly wed bride, the hostel lights up with multicoloured lighting and beautiful décor.On this day, we bid farewell to ourseniors, stalwart people who guide usthroughout our year. To finish it all off,we have a special dinner",
-            img:[H1 , H2 , H3 , H4 , H5 , H6 , H8, H9 , H10]
+            img:[H1 , H2 , H3 , H4 , H5 , H6 , H8, H7, H9 , H10]
         },
         {
             name:'INDEPENDENCE DAY',
             info:"On August 15th every year, we celebrate Independence Day with a flag hoisting ceremony, followed by a spirited parade led by sophomores. We also participate in the inter-hostel parade competition with great enthusiasm and team spirit.",
-            img:[I4,I1 , I2, I5, I6 , I7]
+            img:[I4, I3, I1 , I2, I5, I6 , I7]
         },
         {
             name:'JANMASHTAMI',
@@ -54,11 +56,54 @@ const Events = ()=>{
             img:[J1 , J2, J3 , J4 , J5]
         }
         
-    ]
+    ]*/
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch event names & info
+        const eventRes = await fetch(
+          "https://opensheet.elk.sh/1xjI4HRQfPdwkL335CvJ5LJwdeO2Zg5Tas4Wa-po6soc/Event_names"
+        );
+        const eventNames = await eventRes.json();
+
+        // Fetch image links
+        const imageRes = await fetch(
+          "https://opensheet.elk.sh/1xjI4HRQfPdwkL335CvJ5LJwdeO2Zg5Tas4Wa-po6soc/EventImages"
+        );
+        const imageData = await imageRes.json();
+
+        // Build a lookup map: { ImgCode -> [image links] }
+        const imageMap = imageData.reduce((acc, imgObj) => {
+          const code = imgObj["Img Code"];
+          const link = imgObj["Image links"];
+          if (!acc[code]) acc[code] = [];
+          acc[code].push(link);
+          return acc;
+        }, {});
+
+        // Combine both datasets
+        const mergedData = eventNames.map((event) => ({
+          name: event.name,
+          info: event.info,
+          img: imageMap[event["Img Code"]] || [], // attach all images with same Img Code
+        }));
+
+        console.log("Final merged data:", mergedData);
+        setData(mergedData);
+      } catch (err) {
+        console.error("Error fetching data:", err);
+      }
+    };
+
+    fetchData();
+  }, []);
+
     return(
         <>
         <div className="facilties-heading" id='events-heading'>
-            EVENTS
+            EVENT GALLERY
         </div>
 
         <div className="events-outer-wrapper">

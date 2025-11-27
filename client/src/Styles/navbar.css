@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .navbar-hamburger{
     display: none;
@@ -14,6 +15,7 @@
     margin: 15px 0px;
     cursor: pointer;
 }
+
 .navbar-inner-wrapper li{
     padding: 0px 70px;
     width: max-content;

@@ -17,7 +17,14 @@ const Navbar = () => {
               }}/>
         </div>
         <div className="navbar-inner-wrapper" id="navbar-hor">
-          <ul style={{ color: "#1F1F1F", listStyle: "none", display: "flex" }}>
+          <ul style={{ color: "#1F1F1F", listStyle: "none", display: "flex"}}>
+            <li
+              onClick={() => {
+                navigate("/", { replace: true });
+              }}
+            >
+              HOME
+            </li>
             <li
               onClick={() => {
                 navigate("/services", { replace: true });
@@ -37,7 +44,7 @@ const Navbar = () => {
                 navigate("/events", { replace: true });
               }}
             >
-              EVENTS
+              EVENT GALLERY
             </li>
             <li
               onClick={() => {
